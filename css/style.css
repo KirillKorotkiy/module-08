@@ -1,0 +1,159 @@
+*, *::before, 
+    *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body{
+     font-family: "Roboto", sans-serif;
+     color: #666666;
+     font-size: 14px;
+ }
+
+ img {
+    height: auto;
+    display:inline-block;
+    max-width: 100%;
+}
+
+ ul{
+     list-style: none;
+    }
+
+.wrapper{
+    margin: 0 auto;
+    text-align: center;
+}
+
+ .page-link a{
+    text-decoration: none;
+    color: white;
+}
+
+.background{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+.page-header{
+    margin-bottom: 75px;
+}
+
+.page-link-item{
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255, 0);
+    border-width: 3px;
+    line-height: 30px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.page-link-item:not(:last-child){
+    margin-right: 4px;
+}
+
+.page-link-item:hover{
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.sub-page-header{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.search-item{
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+}
+
+.ulpoad-button{
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    border-style: none;
+    border-radius: 25px;
+}
+
+.ulpoad-button a{
+    text-decoration: none;
+   color: white;}
+
+
+.main-section{
+    font-size: 22px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.main-section-item{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.sub-main-section-item{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 4px;
+    line-height: 40px;
+    right: 0;
+    bottom: 0;
+}
+
+.sub-main-name{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 22px;
+}
+
+.sub-main-section-list{
+    margin-bottom: 30px;
+}
+
+.bcg-color-red{
+    background-color: #ff4e50;
+}
+
+.bcg-color-orange{
+    background-color: #ffa507;
+}
+
+.bcg-color-green{
+    background-color: #1cd7ad;
+}
+
+.bcg-color-blue{
+    background-color: #4e73db;
+}
+
+.bottom-button{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    width: 280px;
+    height: 40px;
+    background-color: white;
+    border-color: #ff4e50;
+    border-style: solid;
+    border-radius: 25px;
+    margin-bottom: 60px;
+}
+
+.bottom-button a{
+    text-decoration: none;
+    color:#ff4e50 ;
+}
+

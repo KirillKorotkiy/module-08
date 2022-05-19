@@ -1,0 +1,136 @@
+@media (max-width: 768px){
+
+    .wrapper{
+        width: 320px;}
+
+    .background{
+        min-width: 320px;
+        height: 542px;
+        background-image: url(../img/vector-smart-object-320.jpg);
+        background-position: center;
+    }
+
+    .page-header-link{
+        margin-bottom: 40px;
+    }
+    
+    .page-link{
+        padding-top: 20px;
+        padding-bottom: 110px;
+    }
+
+    .search{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .search-item{
+        width: 220px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .sub-main-section{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+    .wrapper{
+        width: 680px;
+    }
+
+    .background{
+        height: 700px;
+        background-image: url(../img/vector-smart-object-700.jpg);
+        background-position: center;
+    }
+
+    .page-header-link{
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: 0px;
+        flex-direction: row-reverse;
+        padding-top: 50px;
+        padding-bottom: 145px;
+        align-items: center;
+    }
+
+    .search{
+        font-size: 52px;
+        margin-bottom: 45px;
+    }
+
+    .search-item{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .sub-main-section{
+        max-height: 610px;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .sub-main-section-list:nth-child(-n+2){
+        margin-right: 50px;
+    }
+}   
+
+@media (min-width: 1440px){
+
+    .background{
+        height: 700px;
+        background-image: url(../img/vector-smart-object-940.jpg);
+        background-position: center;
+    }
+
+    .wrapper{
+        width: 940px;}
+
+
+        .sub-main-section{
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .page-header-link{
+            justify-content: space-between;
+            display: flex;
+            margin-bottom: 0px;
+            flex-direction: row-reverse;
+            padding-top: 50px;
+            padding-bottom: 145px;
+            align-items: center;
+        }
+    
+        .search{
+            font-size: 52px;
+            margin-bottom: 45px;
+        }
+    
+        .search-item{
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+
+        .three{
+            order:2;
+        }
+
+        .five{
+            order: 3;
+        }
+
+    }
+
+
+
+
