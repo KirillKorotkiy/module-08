@@ -21,8 +21,17 @@
     }
 
 .wrapper{
+    width: 320px;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
  .page-link a{
@@ -31,6 +40,11 @@
 }
 
 .background{
+    min-width: 320px;
+    height: 542px;
+    background-image: url(../img/vector-smart-object-320.jpg);
+    background-position: center;
+    background-size: cover;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     color: white;
@@ -41,8 +55,19 @@
     margin-bottom: 75px;
 }
 
+.page-header-link{
+    margin-bottom: 40px;
+}
+
+.page-link{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 110px;
+}
+
 .page-link-item{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     width: 90px;
     height: 35px;
     border-style: solid;
@@ -53,9 +78,6 @@
     font-size: 14px;
 }
 
-.page-link-item:not(:last-child){
-    margin-right: 4px;
-}
 
 .page-link-item:hover{
     border-color: rgba(255, 255, 255, 1);
@@ -66,23 +88,37 @@
     font-size: 20px;
 }
 
+
+.sub-page-header a{
+    text-decoration: none;
+    color: white;
+}
+
+.search{
+    font-size: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
 .search-item{
     font-family: Roboto, sans-serif;
     font-weight: 300;
+    width: 220px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
 }
 
 .ulpoad-button{
     width: 280px;
     height: 40px;
     background-color: #ff4e50;
-    border-style: none;
+    border: none;
     border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    
 }
-
-.ulpoad-button a{
-    text-decoration: none;
-   color: white;}
-
 
 .main-section{
     font-size: 22px;
@@ -100,17 +136,30 @@
     margin-bottom: 20px;
 }
 
+.sub-main-section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 .sub-main-section-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     width: 45px;
     height: 45px;
     border-color: white;
     border-style: solid;
     border-radius: 50%;
-    border-width: 4px;
-    line-height: 40px;
+    border-width: 4px; 
     right: 0;
     bottom: 0;
+}
+
+.sub-main-section-list{
+    max-width: 225px;
 }
 
 .sub-main-name{
@@ -120,7 +169,7 @@
     margin-bottom: 22px;
 }
 
-.sub-main-section-list{
+.sub-main-section-list:not(:last-child){
     margin-bottom: 30px;
 }
 
@@ -150,10 +199,109 @@
     border-style: solid;
     border-radius: 25px;
     margin-bottom: 60px;
+    color: #ff4e50;
 }
 
-.bottom-button a{
-    text-decoration: none;
-    color:#ff4e50 ;
-}
+@media (min-width: 768px){
+
+    .wrapper{
+        min-width: 680px;
+    }
+    
+    .wrapper-main{
+        width: 475px;
+        margin: 0 auto;
+    }
+
+    .background{
+        height: 700px;
+        background-image: url(../img/vector-smart-object-700.jpg);
+        background-position: center;
+    }
+
+    .page-header-link{
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: 0px;
+        flex-direction: row-reverse;
+        padding-top: 50px;
+        padding-bottom: 145px;
+        align-items: center;
+    }
+
+    .page-link{
+        padding: 0;
+    }
+
+
+    .search{
+        max-width: 510px;
+        font-size: 52px;
+        margin-bottom: 45px;
+    }
+
+    .search-item{
+        width: auto;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .sub-main-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .sub-main-section-list:nth-child(-n+2){
+        margin-bottom: 30px;
+    }
+
+    .sub-main-section-list:nth-last-child(-n+2){
+        margin-bottom: 0px;
+    }
+}   
+
+@media (min-width: 1440px){
+
+    .background{
+        height: 700px;
+        background-image: url(../img/vector-smart-object-940.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .wrapper{
+        min-width: 940px;}
+
+   .wrapper-main{
+       min-width: 940px;
+        }
+
+     .sub-main-section-list:nth-child(-n+2){
+      margin-bottom: 0px;
+        }
+
+    .sub-main-section-list:not(:last-child){
+        margin-right: 10px;
+    }
+
+     .page-header-link{
+            justify-content: space-between;
+            margin-bottom: 0px;
+            flex-direction: row-reverse;
+            padding-top: 50px;
+            padding-bottom: 145px;
+            align-items: center;
+        }
+    
+        .search{
+            font-size: 52px;
+            margin-bottom: 45px;
+        }
+    
+        .search-item{
+            font-size: 24px;
+            margin-bottom: 40px;  }
+    }
+
 
