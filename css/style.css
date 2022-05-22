@@ -76,6 +76,7 @@
     line-height: 30px;
     border-radius: 20px;
     font-size: 14px;
+    transition: border-color 300ms ease;
 }
 
 
@@ -129,8 +130,8 @@
 }
 
 .main-section-item{
-    position: relative;
     display: inline-block;
+    position: relative;
     width: 120px;
     height: 120px;
     margin-bottom: 20px;
